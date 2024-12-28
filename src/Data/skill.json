@@ -19,12 +19,13 @@
         "Oracle",
         "MongoDB",
         "PostgreSQL",
-        "Vector Database (Milvus)"
+        "Vector Database"
     ],
     "tools": [
         "Git",
-        "UI & UX (Figma)",
-        "Illustrator / Photoshop",
-        "Autodesk Revit"
+        "Illustrator",
+        "Photoshop",
+        "Autodesk Revit",
+        "UI & UX (Figma)"
     ]
 }
