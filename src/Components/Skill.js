@@ -2,7 +2,7 @@ import React from "react";
 import dataskill from "../Data/skill.json";
 import coding from '../images/fcode.png';
 import lcoding from '../images/code.png';
-import mobile from '../images/mobile.png';
+import { MdFiberManualRecord, MdArrowForwardIos, MdLabelImportant, MdGrade } from "react-icons/md";
 import database from '../images/database.png';
 import tool from '../images/tool.png';
 const Skill = () => {
@@ -27,11 +27,7 @@ const Skill = () => {
                     <div className="text-slate-300">
                         {dataskill.framework.map((data, idx) => (
                             <div key={idx} className="flex items-center space-x-2">
-                                <svg className="w-5 h-5" fill="none" strokeWidth="1.5"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M9
-                                12.75L11.25 15L15 9.75M21 12a3.745 3.745 0 0 1-7.452 0" />
-                                </svg>
+                                <MdArrowForwardIos/>
                                 <p className="italic">{data}</p>
                             </div>
                         ))}
@@ -52,11 +48,7 @@ const Skill = () => {
                     <div className="text-slate-300">
                         {dataskill.languages.map((data, idx) => (
                         <div key={idx} className="flex items-center space-x-2">
-                            <svg className="w-5 h-5" fill="none" strokeWidth="1.5"
-                            stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M9
-                            12.75L11.25 15L15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6" />
-                            </svg>
+                            <MdFiberManualRecord/>
                             <p className="italic">{data}</p>
                         </div>
                         ))}
@@ -77,11 +69,8 @@ const Skill = () => {
                     <div className="text-slate-300">
                         {dataskill.databases.map((data, idx) => (
                             <div key={idx} className="flex items-center space-x-2">
-                                <svg className="w-5 h-5" fill="none" strokeWidth="1.5"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15L15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                            <p className="italic">{data}</p>
+                                <MdLabelImportant/>
+                                <p className="italic">{data}</p>
                             </div>
                         ))}
                     </div>
@@ -102,10 +91,7 @@ const Skill = () => {
                     <div className="text-slate-300">
                         {dataskill.tools.map((data, idx) => (
                             <div key={idx} className="flex items-center space-x-2">
-                                <svg className="w-5 h-5" fill="none" strokeWidth="1.5"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6l9-13.5" />
-                                </svg>`
+                                <MdGrade/>
                                 <p className="italic">{data}</p>
                             </div>
                         ))}
