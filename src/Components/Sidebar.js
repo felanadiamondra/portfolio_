@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import { MdContacts, MdHomeRepairService, MdSchool,
         MdIntegrationInstructions, MdLightbulb,
-        MdLibraryBooks, MdDownload, MdMenuOpen, MdClose } from "react-icons/md";
+        MdLibraryBooks, MdDownload, MdMenuOpen, MdClose, MdEngineering } from "react-icons/md";
 import Bio from "./Bio";
 import Certification from "./Certification";
 import Education from "./Education";

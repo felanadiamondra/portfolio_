@@ -23,10 +23,10 @@ const Bio = (props) => {
         to-blue_picton font-bold text-center text-lg sm:text-xl md:text-2xl mb-10'>
         1 percent better every day.
         </p> 
-        <figure className="md:flex md:h-72 h-auto bg-slate-200 rounded-md mx-4
-        sm:mx-10 md:mx-20 lg:mx-40 p-4 sm:p-6 md:p-10 justify-center shadow-xl backdrop-filter
+        <figure className="md:flex lg:flex h-auto items-center justify-center bg-slate-200 rounded-md mx-4
+        sm:mx-10 md:mx-20 lg:mx-40 p-4 sm:p-6 md:p-10 shadow-xl backdrop-filter
         backdrop-blur-sm bg-opacity-10 border border-gray-100">
-            <img className="w-36 h-36 sm:w-36 sm:h-36 md:w-52 md:h-52 rounded-full
+            <img className="w-36 h-36 sm:w-36 md:w-52 md:h-52 sm:h-36 rounded-full
             mx-auto md:mr-20 mb-4 md:mb-0" src={profil} alt="Felana Diamondra RANDRIAMADISON"
             />
             <div className='text-center md:text-left'>
