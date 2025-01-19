@@ -1,22 +1,27 @@
+import { MdGrade } from "react-icons/md";
+
 const Education = () =>{
     const educData = [
         {
-            universityName : "Master ~ ESTI / ESIEE IT Paris",
-            path : "MSI",
+            universityName : "ESTI ~ ESIEE IT Paris",
+            path : "Master's in Management of Information Systems",
             year : "2022 - 2024",
-            degree : "Master's Degree in MSI"
+            desc : "Focused on strategic IT management",
+            link : 0
         },
         {
-            universityName : "Core teams ~ GDSC ESTI",
-            path : "Google Developer Students Club",
+            universityName : "GDSC ESTI (Google Developer Student Clubs)",
+            path : "Core Team Member",
             year : "2022 - 2023",
-            degree : "https://gdsc.community.dev/esti "
+            desc : "https://gdsc.community.dev/esti",
+            link : 1
         },
         {
-            universityName : "Licence - ESTI",
-            path : "IDEV",
-            year : "2019 - 2022",
-            degree : "Bachelor's Degree in Integration and Development"
+            universityName : "ESTI",
+            path : "Bachelor's in Integration and Development",
+            year : "2018 - 2022",
+            desc : "Focused on software development and practical programming skills for real-world applications.",
+            link : 0
         } 
     ]
     return(
@@ -27,34 +32,51 @@ const Education = () =>{
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="animate__animated animate__fadeIn">
-                <div className="w-full md:w-10/12 mx-auto">
+                <div className="w-full mx-auto">
                 <div className="border-l-2">
                     {
                         educData.map((educ, idx) => (
                             
                             idx % 2 !== 0 ? (
-                                <div className="bg-gradient-to-r from-g_rose to-g_purple transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                                <div className="w-96 bg-gradient-to-r from-g_rose to-g_purple transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                                 <div className="w-5 h-5 bg-g_rose absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
         
                                 <div className="w-10 h-1 bg-gradient-to-r from-g_rose to-g_purple absolute -left-10 z-0"></div>
         
                                 <div className="flex-auto">
-                                    <h1 className="">{educ.universityName}</h1>
-                                    <h1 className="">{educ.year}</h1>
-                                    <h3>{educ.path}</h3>
+                                    <h1 className="md:text-base sm:text-sm">{educ.universityName}</h1>
+                                    <h1 className="text-sm italic font-semibold">{educ.year}</h1>
+                                    <h3 className="text-sm font-semibold">{educ.path}</h3>
+                                    <p className="text-sm italic text-slate-200 flex items-start">
+                                        <MdGrade className="w-4 h-4 flex-shrink-0 mt-0.5"/>
+                                        {
+                                         educ.link ? (
+                                            <span className="ml-2 hover:underline"><a href={educ.desc}>{educ.desc}</a></span>
+                                         ) : <span className="ml-2">{educ.desc}</span>
+                                        }
+                                        
+                                    </p>
                                 </div>
                                 
                                 </div>
                             ) : (
-                            <div className="bg-white bg-opacity-20 transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                            <div className="w-96 bg-white bg-opacity-20 transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                             <div className="w-5 h-5 bg-g_rose absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
     
                             <div className="w-10 h-1 bg-gradient-to-r from-g_rose to-g_purple absolute -left-10 z-0"></div>
     
-                            <div className="flex-auto">
-                                <h1 className="">{educ.universityName}</h1>
-                                <h1 className="">{educ.year}</h1>
-                                <h3>{educ.path}</h3>
+                            <div className="flex-auto text-sm">
+                                <h1 className="md:text-base sm:text-sm">{educ.universityName}</h1>
+                                <h1 className="text-sm italic font-semibold">{educ.year}</h1>
+                                <h3 className="text-sm font-semibold">{educ.path}</h3>
+                                <p className="text-sm italic text-slate-200 flex items-start">
+                                    <MdGrade className="w-4 h-4 flex-shrink-0 mt-0.5"/>
+                                        {
+                                         educ.link ? (
+                                            <span className="ml-2 hover:underline"><a href={educ.desc}>{educ.desc}</a></span>
+                                         ) : <span className="ml-2">{educ.desc}</span>
+                                        }
+                                </p>
                             </div>
                             </div>)
                 
