@@ -5,11 +5,11 @@ const Work = () => {
   const dataWork = [
     {
     companyName: "NP Akadin Group",
-    year: "June 2024 -  Now",
+    year: "June 2024 -  Present",
     jobTitle: "Software Engineer",
     description: [
-    "Led the project group, defining its scope, objectives, and deliverables.",
-    "Web service development, and report generation using Crystal Reports."
+    "Managing the group's projects, defining its scope, objectives, and deliverables.",
+    "Web services development and report generation using Crystal Reports."
     ]
     },
     {
