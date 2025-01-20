@@ -8,7 +8,8 @@ const Work = () => {
     year: "June 2024 -  Now",
     jobTitle: "Software Engineer",
     description: [
-    "Running group project"
+    "Led the project group, defining its scope, objectives, and deliverables.",
+    "Web service development, and report generation using Crystal Reports."
     ]
     },
     {
