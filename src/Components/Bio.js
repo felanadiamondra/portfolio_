@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import profil from '../images/Diamondra.jpg';
 const Bio = (props) => {
     const [textIndex, setTextIndex] = useState(0);
-    const chaine = "Tailwind CSS is the only framework that I've seen scale on large teams.easy to customize, adapts to any design, and the build size is tiny.";
+    const chaine = "I am a passionate software developer dedicated to building efficient, user-friendly solutions. Driven by curiosity and a commitment to growth, I thrive in innovative, collaborative environments and enjoy contributing to impactful projects.";
     const texts = chaine.split(" ");
     const { t } = useTranslation();
 
