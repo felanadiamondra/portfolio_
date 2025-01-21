@@ -12,7 +12,7 @@ const Skill = () => {
         from-dark_blue to-blue_picton font-bold text-lg sm:text-xl md:text-2xl mb-10">
              My skills
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-20">
         {/* Framework and library */}
             <div className="h-96 bg-white bg-opacity-10 rounded-xl">
                 <div className="h-14 p-5 text-center flex items-center justify-center
