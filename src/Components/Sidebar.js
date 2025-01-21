@@ -109,6 +109,19 @@ const Sidebar = () => {
             
                 <MdDownload className="w-6 h-6 text-slate-300"/>
             </button>
+                <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+                  <h1 className="text-4xl font-bold text-gray-800 mb-4">Bienvenue sur mon portfolio</h1>
+                  <p className="text-lg text-gray-600 mb-6">
+                    Téléchargez mon CV en cliquant sur le bouton ci-dessous :
+                  </p>
+                  <a
+                    href="/QUESTIONS.pdf"
+                    download="CV_Felana_Randriamadison.pdf"
+                    className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow-lg hover:bg-blue-700 transition duration-300"
+                  >
+                    Télécharger mon CV
+                  </a>
+                </div>  
         </div>
         <div class="w-full">
            <Routes>
