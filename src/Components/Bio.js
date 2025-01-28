@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import profil from '../images/Diamondra.jpg';
 const Bio = (props) => {
     const [textIndex, setTextIndex] = useState(0);
-    const chaine = "I am a passionate software developer dedicated to building efficient, user-friendly solutions. Driven by curiosity and a commitment to growth, I thrive in innovative, collaborative environments and enjoy contributing to impactful projects.";
+    const chaine = "Software developer crafting efficient and user-friendly solutions. Enjoys contributing to meaningful projects and collaborating with dynamic teams to drive innovation.";
     const texts = chaine.split(" ");
     const { t } = useTranslation();
 
