@@ -18,6 +18,18 @@ const Sidebar = () => {
      setIsOpen(!isOpen);
    };
 
+   const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimate(true);
+      // Réinitialiser l'animation après qu'elle soit terminée
+      setTimeout(() => setAnimate(false), 1000); // La durée de l'animation est de 1 seconde
+    }, 4000); // 10 secondes
+
+    return () => clearInterval(interval);
+  }, []);
+
     return (
     <div className="flex h-screen bg-gradient-to-r from-navy_blue to-dark_blue dark:border-indigo-800 dark:bg-darker focus:outline-none">
         <button
@@ -104,14 +116,16 @@ const Sidebar = () => {
             </div>
 
             {/* Bottom Button */}
-            <button className="w-12 h-12 bg-gradient-to-r bg-blue_picton opacity-90 shadow-lg rounded-full flex items-center
+            <button className="w-12 h-12 bg-gradient-to-r bg-blue_picton opacity-90 shadow-lg rounded-full flex overflow-hidden items-center
             justify-center hover:bg-purple-600 ">    
                 <a
                 href="/CV.pdf"
                 download="CV_Felana_Randriamadison.pdf"
                 className=" transition duration-300"
                 >
-                 <MdDownload className="w-6 h-6 text-slate-300"/>
+                 <MdDownload className={`w-6 h-6 text-slate-300 ${
+                  animate ? 'animate__animated animate__bounce' : ''
+                }`}/>
                 </a>
             </button>
         </div>
