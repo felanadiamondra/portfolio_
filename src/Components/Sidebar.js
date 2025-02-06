@@ -128,6 +128,25 @@ const Sidebar = () => {
                 }`}/>
                 </a>
             </button>
+                // const [showTooltip, setShowTooltip] = useState(false);
+
+                //   return (
+                //     <div className="relative flex justify-center items-center">
+                //       <button
+                //         className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-indigo-600 hover:to-blue-500 text-white font-bold py-3 px-6 rounded-full flex items-center gap-2 transition-all duration-500 ease-in-out shadow-lg transform hover:shadow-2xl active:scale-95"
+                //         onMouseEnter={() => setShowTooltip(true)}
+                //         onMouseLeave={() => setShowTooltip(false)}
+                //       >
+                //         <Download className="w-6 h-6 animate-bounce" />
+                         
+                //       </button>
+                      
+                //       <div
+                //         className={`absolute bottom-full right-0 mb-3 px-4 py-2 bg-gray-900 text-white text-sm rounded-lg shadow-xl transform transition-all duration-500 ease-out ${showTooltip ? 'opacity-100 translate-y-0 translate-x-15 scale-105' : 'opacity-0 translate-y-5 translate-x-5 scale-90'}`}
+                //       >
+                //         Download CV
+                //       </div>
+                //     </div>
         </div>
         <div class="w-full">
            <Routes>
