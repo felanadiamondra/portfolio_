@@ -30,7 +30,7 @@ const Education = () =>{
         bg-gradient-to-r from-dark_blue to-blue_picton font-bold text-lg sm:text-xl md:text-2xl mb-10 sm:mb-16
         md:mb-20">My education timeline and training :)</h1>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-40">
             <div className="animate__animated animate__fadeIn">
                 <div className="w-full mx-auto">
                 <div className="border-l-2">
@@ -114,23 +114,24 @@ const Education = () =>{
                 </div>
             </div>
             <div>
-                <div className="mx-10">
-                    <div className="grid py-32 grid-flow-col grid-rows-2 grid-cols-3 animate__animated animate__fadeIn">
-                        <div className="transform scale-110 -rotate-6">
+                <div className="">
+                    <div className="grid py-16 grid-flow-col grid-rows-2 animate__animated animate__fadeIn">
+                        <div className="transform scale-125 -rotate-6">
+                            <img src={require("../images/283_ESTI Misandratra.jpg")} alt="" loading="lazy"/>
+                        </div>
+                        <div className="col-start-3 transform scale-105 rotate-12 translate-x-2 translate-y-1">
+                            <img src={require("../images/Pic4.jpg")} alt="" loading="lazy"/>
+                        </div>
+                        <div className="transform translate-y-24">
+                            <img src={require("../images/WhatsApp Image 2024-09-30 à 10.46.36_43047089.jpg")} alt="" loading="lazy"/>
+                        </div>
+                        <div className="transform translate-y-20 scale-150 -rotate-12 translate-x-2">
+                            <img src={require("../images/Pic3.jpg")} alt="" loading="lazy"/>
+                        </div> 
+                       
+                        <div className="transform-x-20 translate-y-20 col-start-3 rotate-6">
                             <img src={require("../images/image.jpg")} alt="" loading="lazy"/>
                         </div>
-                        <div className="col-start-3 transform scale-75 rotate-6 translate-x-2 translate-y-15">
-                            <img src={require("../images/image.jpg")} alt="" loading="lazy"/>
-                        </div>
-                        {/* <div className="transform scale-150 translate-y-11">
-                            <img src={require("../images/image.jpg")} alt="" loading="lazy"/>
-                        </div> */}
-                        {/* <div className="transform translate-y-24">
-                            <img src={require("../images/image.jpg")} alt="" loading="lazy"/>
-                        </div> */}
-                        {/* <div className="row-start-1 col-start-2 col-span-2 transform-x-20 translate-y-4">
-                            <img src={require("../images/image.jpg")} alt="" loading="lazy"/>
-                        </div> */}
                     </div>
                 </div>
             </div>
